@@ -1,3 +1,10 @@
 h1 {
-    color: aqua;
+    color: aqua; /*betűszín*/
+}
+
+p {
+    font-weight: bold; /*félkövér betű*/
+    font-style: italic; /*dőlt betű*/
+    text-decoration: underline; /*aláhúzott*/
+    text-decoration: none; /*aláhúzás megszüntetése*/
 }
