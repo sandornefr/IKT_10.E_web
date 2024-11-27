@@ -18,6 +18,9 @@
     <p></p> <!--bekezdések készítése-->
     <img src="link vagy img/kep.jpg" alt="ha nem jeleníthető meg a kép ezt a szöveget írja ki" title="ha a kép fölé visszük az egeret ezt a szöveget jeleníti meg"> <!--képet lehet beilleszteni ezzel az oldalra, a link hátránya hogy ha törlik akkor nem jelenik meg-->
     <a href="link vagy saját oldalon navigáció vagy ugrópont" target="_blank"></a> <!--linkelés, 3 féle használat: 1. link (weboldal) új oldalon történő megnyitása a target="blank" lehetőséggel; 2. navigáció saját oldalon: pl.: cica.html; 3. ugrópont: az oldalon egy adott fejezethez ugrik a megfelelő egyedi azonosítóra hivatkozva (id) href="#cica"-->
+    <a href="https://..." target="_blank">LINK</a> <!--link, amely új oldalon nyílik meg-->
+    <a href="cica.html">SAJÁT OLDALRA NAVIGÁL</a>
+    <a href="#leiras">UGRÓPONT</a> <!--link, amely egy fejezet egyedi azonosítójához ugrik-->
     
     <!--számozatlan felsorolás, meglévő szöveggel gyors: F1 - wrap - Emmet: Wrap with Abbreviation - enter - ul>li* - enter-->
     <ul>
@@ -30,7 +33,6 @@
     
     <!--2024. 11. 20. órai munka-->
     <br> <!--sortörés-->
-    <hr> <!--vízszintes vonal-->
     <span></span> <!--egyedi beállítások szavakra, mondatokra-->
     <b></b> vagy <strong></strong> <!--félkövér betű stílus HTML tag segítségével-->
     <p class="fw-bold"></p> <!--félkövér betű Bootstrap segítségével-->
@@ -40,5 +42,63 @@
     <p class="text-decoration-underline"></p> <!--aláhúzott Bootstrap segítségével-->
     <p class="text-decoration-none"></p> <!--aláhúzás megszüntetése Bootstrap segítségével-->
 
+    <!--2024. november 27.-ei órai munka-->
+    <table> <!--táblázat készítése-->
+        <thead> <!--táblázat fejrésze-->
+            <tr> <!--táblázat sora-->
+                <th colspan="számérték"></th> <!--fejléc cella, colspan: oszlopokat vonunk össze-->
+            </tr>
+        </thead>
+        <tbody> <!--a táblázat törzse-->
+            <tr>
+                <td rowspan="számérték"></td> <!--adatcella, rowspan: sorok összevonása-->
+                <!--a th és a td adják a táblázat oszlopait-->
+            </tr>
+        </tbody>
+        <tfoot></tfoot> <!--táblázat láb része-->
+    </table>
+    <div></div> <!--keret-->
+    <!--az ágazatin előforduló tag-eknek itt a vége-->
+    
+    <hr> <!--hosszú vízszintes vonal-->
+    <form action=""> <!--űrlap készítése-->
+        <fieldset> <!--részekre bontható általa az űrlap, pl.: személyes adatok rész, szegélyt rak az adott rész köré-->
+            <legend>Személyes adatok</legend> <!--az adott rész címének beállítása, pl.: személyes adatok-->
+            <label for="nev">NÉV:</label> <!--megnevezés-->
+            <input type="text" name="nev" id="nev" placeholder="Kiss István">
+            <!--beviteli mező, sokféle típus van, egyedi azonosítóval a label összekapcsolható, a placeholderbe beírt szöveg segítséget ad a felhasználónak az űrlap kitöltésében-->
+            <!--input type lehet:
+            - szöveg (text),
+            - jelölő négyzet (checkbox) - ha több választás lehetséges,
+            - rádió gomb (radio) - egy választás lehetséges,
+            - email cím (email),
+            - szám (number),
+            - dátum (date),
+            - jelszó (password),
+            - idő (time)
+            stb., DE én csak a fent leírtakat fogom kérdezni!!-->
+        </fieldset>
+        <button type="button">GOMB</button> <!--gomb-->
+        <!--gombot kétféleképpen lehet hozzáadni a weboldalhoz:
+        1. input "tag" type="button" (sima gomb), type="submit" (Küldés), type="reset" (visszaállítás)
+        Ha beállítunk value-t (értéket), akkor csak azt fogja kiírni a gombra, amennyiben ezt kihagyjuk a böngésző a saját erre alkalmazott beállítását fogja használni az általad használt operációs rendszer nyelvén.
+        2. button "tag"type="button" (sima gomb), type="submit" (Küldés), type="reset" (visszaállítás)-->
+        <label for="uzenet">Üzenet a szakácsnak:</label>
+        <textarea name="message" id="uzenet" cols="30" rows="10"></textarea> <!--szövegmező nagyobb terjedelmű szövegek írása esetén pl.: Üzenet a szakácsnak: Nem kérek rukkolát a pizzára!-->
+        <label for="cars">AUTÓK:</label>
+        <select name="autok" id="cars"> <!--lenyíló menüs választási lehetőség-->
+            <option value=""></option> <!--lenyíló menü eleme-->
+            <option value="">Audi</option>
+            <option value="">BMW</option>
+            <option value="">Ford</option>
+            <option value="">Fiat</option>
+        </select>
+    </form>
+    <nav></nav> <!--menürendszer kialakítása-->
+    <header></header> <!--fejléc a body-n belül-->
+    <footer></footer> <!--lábléc a body-n belül-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3QakihAEwoU?si=pQ-vWgNP-8DxB9ty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--videókat lehet beilleszteni a weboldalra-->
+    <sub></sub> <!--alsó index-->
+    <sup></sup> <!--felső index-->
 </body>
 </html>
