@@ -1,10 +1,39 @@
-h1 {
-    color: aqua; /*betűszín*/
-}
-
-p {
-    font-weight: bold; /*félkövér betű*/
-    font-style: italic; /*dőlt betű*/
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif; /*betűtípus beállítása*/
+    background-color: aliceblue; /*háttérszín*/
+    background-image: url(../img/hatter.jpg); /*háttérkép*/
+    color: red; /*betűszín*/
+    color: #ffffff; /*betűszín hexakód*/
+    color: rgb(252,242,75); /*betűszín RGB kóddal*/
+    font-size: 0.9em; /*alapértelmezett (1em) betűmérettől 10%-kal kisebb*/
+    font-variant: small-caps; /*kiskapitális*/
+    text-transform: uppercase; /*nagybetűs*/
     text-decoration: underline; /*aláhúzott*/
     text-decoration: none; /*aláhúzás megszüntetése*/
+    text-align: justify; /*sorkizárt*/
+    font-weight: bold; /*félkövér*/
+    font-style: italic; /*dőlt*/
+    width: 100%; /*szélesség*/
+    height: 100%; /*magasság*/
+}
+
+table {
+    border-collapse: collapse; /*egyszeres szegély a táblázatnál*/
+}
+
+tr:hover { /*táblázati sor felé viszem az egeret*/
+    background-color: yellow;
+}
+
+.fejlec {
+    border: 2px solid black; /*2pixel folytonos vonalú fekete szegély*/
+    border: 3px dotted white; /*3pixel pontozott vonalú fehér szegély*/
+    padding: 5px 15px; /*belső margó függőleges (fent-lent) és vízszintes (jobb-bal) beállítása*/
+    padding: 5px 10px 15px 20px; /*óramutató járásának megfelelő irányba kell haladni és 12 óránál kezdesz: fent-jobb-lent-bal (top-right-bottom-left)*/
+    padding: 5px 10px 15px; /*az 1. fent, 2. jobbra-balra, 3. lent*/ 
+    margin: 5px; /*külső margó vagy csak simán margónak írják, ez az érték mindehol ugyanannyi*/
+}
+
+ul {
+    list-style-image: url(../img/bogar.jpg); /*listaelem stílus kép*/
 }
